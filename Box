@@ -1,0 +1,47 @@
+class Box1 {
+        private  int length;
+        private    int  width;
+	    private   int  height;
+	    
+	    /*public Box(int l,int w,int h){构造方法名必须与类名相同
+	    	length=l;
+	    	width=w;
+	    	height=h;
+	    }*/
+	    public Box1(int l, int w, int h){
+	    	length=l;
+	    	width=w;
+	    	height=h;
+	    }
+	    
+	    public  void setLength(int lengthValue){
+	    	length=lengthValue;	
+	    }
+	    public  void setWidth(int  widthValue){
+	    	width=widthValue;
+	    }
+	    public  void setHeight(int  heightValue){
+	    	height=heightValue;
+	    }
+	    public int getLength(){
+	    	return length;
+	    }
+	    public int getWidth(){
+	    	return width;
+	    }
+	    public int getheight(){
+	    	return height;
+	    }
+	    public   int  getVol(){
+	    	return   length*width*height;
+	    }
+ }
+	    public  class  Demo63{
+	    public  static void  main(String[] args){
+	       Box1  box=new  Box1(5,3,4);
+	    	System.out.println("box的体积为："+box.getVol());
+	    	
+	    	
+	  
+	    }
+}
